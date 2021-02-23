@@ -1,5 +1,5 @@
 <template>
-    <p>Login do nosso sistema</p>
+    <p>Home da Dashboard</p>
 </template>
 
 <script>
