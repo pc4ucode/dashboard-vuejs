@@ -14,7 +14,8 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/', name: 'login', component: LoginComponent },
-  { path: '/home', name: 'home', component: HomeComponent }
+  { path: '/home', name: 'home', component: HomeComponent },
+  { path: '/produtos', name: 'products', component: HomeComponent },
 ]
 
 const router = new VueRouter ({
