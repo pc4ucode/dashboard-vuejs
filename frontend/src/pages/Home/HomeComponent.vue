@@ -67,15 +67,15 @@ export default {
 
     methods: {
         async getUsers() {
-            let response = await axios.get('http://jsonplaceholder.typicode.com/users')
+            // let response = await axios.get('http://jsonplaceholder.typicode.com/users')
 
-            if(response.status == 200) {
-                this.users = response.data
-            } else {
-                console.error("Ocorreu um erro na API")
-            }            
+            // if(response.status == 200) {
+            //     this.users = response.data
+            // } else {
+            //     console.error("Ocorreu um erro na API")
+            // }            
             
-            response = await axios.get('http://localhost:8000/api/')
+            const response = await axios.get('http://localhost:8000/api/')
 
             if(response.status == 200) {                
                 console.log(response.data)
