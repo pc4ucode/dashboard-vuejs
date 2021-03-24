@@ -36,7 +36,7 @@
         props: {
             data: Array,
             description: String,
-            columns: []
+            columns: {}
         }
     }
 </script>
