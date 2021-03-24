@@ -1,7 +1,9 @@
 <template>
     <DashboardComponent>
         <div slot="slot-pages" class="content-pages">
-            <p>Produtos</p>
+            <header class="title_pages">
+                <p>Produtos</p>
+            </header>
         </div>
     </DashboardComponent>
 </template>
@@ -18,6 +20,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style lang="scss" src="./style.scss" scoped/>
