@@ -14,6 +14,7 @@
         <div class="menu">
             <ul>
                 <li><router-link :to="{name: 'home'}"><i class="fa fa-home mr-2"></i>início</router-link></li>
+                <li><router-link :to="{name: 'clients'}"><i class="fa fa-box mr-2"></i>Clientes</router-link></li>
                 <li><router-link :to="{name: 'products'}"><i class="fa fa-box mr-2"></i>Produtos</router-link></li>
                 <li><router-link :to="{name: 'home'}"><i class="fa fa-store mr-2"></i>Vendas</router-link></li>
                 <li><router-link :to="{name: 'home'}"><i class="fa fa-chart-bar mr-2"></i>Relatórios</router-link></li>
