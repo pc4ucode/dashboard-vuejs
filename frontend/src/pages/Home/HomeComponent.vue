@@ -24,6 +24,14 @@
                     </div>
                 </div>
             </div>
+
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ListComponent :users="users" />
+                    </div>
+                </div>
+            </div>
         </div>
     </DashboardComponent>
 </template>
@@ -31,12 +39,40 @@
 <script>
 import DashboardComponent from '../Dashboard/DashboardComponent';
 import CardsComponent from '../../components/CardsComponent';
+import ListComponent from '../../components/ListsComponent';
+
+const axios = require('axios');
 
 export default {
+    name:'HomeComponent',
     components: {
         DashboardComponent,
-        CardsComponent
+        CardsComponent,
+        ListComponent
+    },
+
+    data() {
+        return {
+            users: []
+        }
+    },
+
+    mounted() {
+        this.getUsers()
+    },
+
+    methods: {
+        async getUsers() {
+            const response = await axios.get('http://jsonplaceholder.typicode.com/users')
+
+            if(response.status == 200) {
+                this.users = response.data
+            } else {
+                console.error("Ocorreu um erro na API")
+            }            
+        }
     }
+
 }
 </script>
 
