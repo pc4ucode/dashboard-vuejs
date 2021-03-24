@@ -13,10 +13,10 @@
 
         <div class="menu">
             <ul>
-                <li><router-link :to="{name: 'home'}"><i class="fa fa-home"></i>início</router-link></li>
-                <li><router-link :to="{name: 'products'}"><i class="fa fa-box"></i>Produtos</router-link></li>
-                <li><router-link :to="{name: 'home'}"><i class="fa fa-store"></i>Vendas</router-link></li>
-                <li><router-link :to="{name: 'home'}"><i class="fa fa-chart-bar"></i>Relatórios</router-link></li>
+                <li><router-link :to="{name: 'home'}"><i class="fa fa-home mr-2"></i>início</router-link></li>
+                <li><router-link :to="{name: 'products'}"><i class="fa fa-box mr-2"></i>Produtos</router-link></li>
+                <li><router-link :to="{name: 'home'}"><i class="fa fa-store mr-2"></i>Vendas</router-link></li>
+                <li><router-link :to="{name: 'home'}"><i class="fa fa-chart-bar mr-2"></i>Relatórios</router-link></li>
             </ul>
         </div>
     </div>
@@ -73,18 +73,18 @@ export default {
     }
 
     .menu {
-        padding: 10px;
+        margin-top: 15px;
+        padding: 10px 20px;
 
         ul li {
             margin: 15px 0;
             font-size: 18px;
+            list-style: none;
+            font-weight:  200;
 
             a {
                 color: #fff;
-
-                i {
-                    margin-left: 10px;
-                }
+                text-decoration: none;
             }
         }
         
