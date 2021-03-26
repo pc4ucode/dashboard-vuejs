@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import '@fortawesome/fontawesome-free/css/all.css'
@@ -13,6 +14,8 @@ import ClientsComponent from './pages/Clients/ClientsComponent'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
+
+axios.defaults.baseURL = 'http://localhost:8000/api'
 
 const routes = [
   { path: '/', name: 'login', component: LoginComponent },
